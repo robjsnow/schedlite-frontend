@@ -46,3 +46,17 @@ npm install
 
 # Start the development server
 npm run dev
+
+```
+
+## Contributing
+
+We welcome contributions! If you'd like to fix a bug, suggest a feature, or help shape the roadmap, feel free to open an issue or pull request.
+
+## License
+
+SchedLite is licensed under the [MIT License](LICENSE).
+
+---
+
+Note: This README provides a general overview of the project. For technical documentation or route details, please refer to the source code or future wiki.
