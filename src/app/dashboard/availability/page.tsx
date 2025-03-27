@@ -115,7 +115,7 @@ export default function AvailabilityPage() {
   useEffect(() => {
     async function fetchSessionTypes() {
       try {
-        const res = await fetch("http://localhost:3001/api/sessions", {
+        const res = await fetch("http://localhost:3001/api/session-types", {
           headers: { Authorization: `Bearer ${getToken()}` },
         });
         if (res.status === 401) {
