@@ -62,8 +62,10 @@ function SidebarNav() {
     { href: "/dashboard", label: "Dashboard" },
     { href: "/dashboard/bookings", label: "Bookings" },
     { href: "/dashboard/availability", label: "Availability" },
+    { href: "/dashboard/session-types", label: "Session Types" },
     { href: "/dashboard/integrations", label: "Integrations" },
     { href: "/dashboard/settings", label: "Settings" },
+    
   ];
 
   return (
