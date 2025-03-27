@@ -21,7 +21,7 @@ export default function SessionTypesPage() {
 
   useEffect(() => {
     async function fetchSessionTypes() {
-      const res = await fetch('http://localhost:3001/api/sessions', {
+      const res = await fetch('http://localhost:3001/api/session-types', {
         headers: {
           Authorization: `Bearer ${getToken()}`,
         },
@@ -34,7 +34,7 @@ export default function SessionTypesPage() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const res = await fetch('http://localhost:3001/api/sessions', {
+    const res = await fetch('http://localhost:3001/api/session-types', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export default function SessionTypesPage() {
   }
 
   async function handleDelete(id: string) {
-    const res = await fetch(`http://localhost:3001/api/sessions/${id}`, {
+    const res = await fetch(`http://localhost:3001/api/session-types/${id}`, {
       method: 'DELETE',
       headers: {
         Authorization: `Bearer ${getToken()}`,

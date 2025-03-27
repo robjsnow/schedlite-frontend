@@ -50,7 +50,7 @@ export default function AvailabilityPage() {
   useEffect(() => {
     async function fetchOverrides() {
       try {
-        const res = await fetch("http://localhost:3001/api/slots/overrides", {
+        const res = await fetch("http://localhost:3001/api/overrides", {
           headers: { Authorization: `Bearer ${getToken()}` },
         });
         if (res.status === 401) {
@@ -78,7 +78,7 @@ export default function AvailabilityPage() {
   useEffect(() => {
     async function fetchRules() {
       try {
-        const res = await fetch("http://localhost:3001/api/slots/rules", {
+        const res = await fetch("http://localhost:3001/api/rules", {
           headers: { Authorization: `Bearer ${getToken()}` },
         });
         if (res.status === 401) {
@@ -214,7 +214,7 @@ export default function AvailabilityPage() {
     try {
       const token = getToken();
 
-      await fetch("http://localhost:3001/api/slots/rules", {
+      await fetch("http://localhost:3001/api/rules", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
